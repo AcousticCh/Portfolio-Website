@@ -1,0 +1,148 @@
+* {
+    background-color: #649264;
+}
+
+
+
+.information-flex {
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid #333;
+    box-shadow: 1rem 1rem 20px 0px;
+    margin-bottom: 2.5rem;
+}
+
+.picture {
+    width: 40%;
+    min-height: 20em;
+}
+
+.text-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+#bash-link-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.bash-link{
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid #333;
+    margin-bottom: 0.5%;
+    border-radius: 0.50rem;
+}
+
+#web-link-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.web-link{
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid #333;
+    margin-bottom: 0.5%;
+    border-radius: 0.50rem;
+}
+
+#game-link-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.game-link{
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid #333;
+    margin-bottom: 0.5%;
+    border-radius: 0.50rem;
+}
+
+.button-link{
+    text-decoration: none;
+}
+
+.my-name {
+    
+}
+
+.info-text {
+
+}
+
+.link-container {
+    display: flex;
+}
+#link-container-label{
+    display: flex;
+    justify-content: center;
+}
+
+.project-folder-link-1 {
+    display: flex;
+    border: 3px solid #333;
+    box-shadow: 1rem 1rem 20px 0px;
+    
+    width: 33%;
+    border-radius: 0.50rem;
+}
+
+.project-folder-link-1 ul:hover {
+    opacity: 0;
+}
+
+.project-folder-link-2 {
+    border: 3px solid #333;
+    box-shadow: 1rem 1rem 20px 0px;
+    
+    width: 33%;
+    border-radius: 0.50rem;
+}
+
+.project-folder-link-2 ul:hover {
+    opacity: 0;
+}
+
+.project-folder-link-3 {
+    border: 3px solid #333;
+    box-shadow: 1rem 1rem 20px 0px;
+    
+    width: 33%;
+    border-radius: 0.50rem;
+}
+
+.project-folder-link-3 ul:hover {
+    opacity: 0;
+}
+
+.project-folder-link-1:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(65, 18, 65, 0.7);
+}
+
+.project-folder-link-2:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(65, 18, 65, 0.7);
+}
+
+.project-folder-link-3:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(65, 18, 65, 0.7);
+}
+
+
+.link-button {
+    border: 2px solid rgb(65, 18, 65, 0.7);
+    border-radius: 4rem;
+    height: 4em;
+    box-shadow: 0.1em 0.1em 5px 0px;
+}

@@ -1,148 +1,80 @@
-* {
-    background-color: #649264;
+
+body {
+    margin: 0;
+    background-color: #2e422e;
+    /* use system fonts */
+    font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto", 
+   "Oxygen","Ubuntu","Helvetica Neue", Arial, sans-serif;
 }
+/*  body #2e422e 
+    header-title bg #253625 
+    header-title txt #ccccff */
 
-
-
-.information-flex {
+.header-title{
     display: flex;
     justify-content: space-around;
-    border: 3px solid #333;
-    box-shadow: 1rem 1rem 20px 0px;
-    margin-bottom: 2.5rem;
+    color: #ccccff;
+    background-color: #253625;
 }
 
-.picture {
-    width: 40%;
-    min-height: 20em;
+#header-picture{
+    max-width: 5rem;
+    max-height: 5rem;
+    border-radius: 50%;
+    
 }
 
-.text-flex {
-    display: flex;
-    flex-direction: column;
+.navbar{
+    float: right;
+    overflow: hidden;
 }
 
-#bash-link-list{
-    display: flex;
-    flex-direction: column;
-}
-
-.bash-link{
-    display: flex;
-    justify-content: space-around;
-    border: 3px solid #333;
-    margin-bottom: 0.5%;
-    border-radius: 0.50rem;
-}
-
-#web-link-list{
-    display: flex;
-    flex-direction: column;
-}
-
-.web-link{
-    display: flex;
-    justify-content: space-around;
-    border: 3px solid #333;
-    margin-bottom: 0.5%;
-    border-radius: 0.50rem;
-}
-
-#game-link-list{
-    display: flex;
-    flex-direction: column;
-}
-
-.game-link{
-    display: flex;
-    justify-content: space-around;
-    border: 3px solid #333;
-    margin-bottom: 0.5%;
-    border-radius: 0.50rem;
-}
-
-.button-link{
+.navbar a {
+    float: left;
+    display: block;
+    color: #ccccff;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-}
-
-.my-name {
-    
-}
-
-.info-text {
-
-}
-
-.link-container {
-    display: flex;
-}
-#link-container-label{
-    display: flex;
-    justify-content: center;
-}
-
-.project-folder-link-1 {
-    display: flex;
-    border: 3px solid #333;
-    box-shadow: 1rem 1rem 20px 0px;
-    
-    width: 33%;
-    border-radius: 0.50rem;
-}
-
-.project-folder-link-1 ul:hover {
-    opacity: 0;
-}
-
-.project-folder-link-2 {
-    border: 3px solid #333;
-    box-shadow: 1rem 1rem 20px 0px;
-    
-    width: 33%;
-    border-radius: 0.50rem;
-}
-
-.project-folder-link-2 ul:hover {
-    opacity: 0;
-}
-
-.project-folder-link-3 {
-    border: 3px solid #333;
-    box-shadow: 1rem 1rem 20px 0px;
-    
-    width: 33%;
-    border-radius: 0.50rem;
-}
-
-.project-folder-link-3 ul:hover {
-    opacity: 0;
-}
-
-.project-folder-link-1:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgb(65, 18, 65, 0.7);
-}
-
-.project-folder-link-2:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgb(65, 18, 65, 0.7);
-}
-
-.project-folder-link-3:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgb(65, 18, 65, 0.7);
+    font-size: 17px;
 }
 
 
-.link-button {
-    border: 2px solid rgb(65, 18, 65, 0.7);
-    border-radius: 4rem;
-    height: 4em;
-    box-shadow: 0.1em 0.1em 5px 0px;
+/* Change the color of links on hover */
+.navbar a:hover {
+    background-color: #ccccff;
+    color: black;
 }
+  
+  /* Add an active class to highlight the current page */
+  .navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .navbar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 606px) {
+    .navbar a {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+}
+
+@media screen and (max-width: 606px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;}
+
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+  }

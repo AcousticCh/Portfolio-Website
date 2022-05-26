@@ -52,12 +52,13 @@ body {
     color: white;
 }
   
-  /* Hide the link that should open and close the topnav on small screens */
+  /* Hide the link that should open and close the topnav on small screens*/ 
   .navbar .icon {
     display: none;
 }
 
-@media screen and (max-width: 606px) {
+
+@media screen and (max-width: 654px) {
     .navbar a {display: none;}
     .navbar a.icon {
       float: right;
@@ -65,12 +66,13 @@ body {
     }
 }
 
-@media screen and (max-width: 606px) {
+@media screen and (max-width: 654px) {
     .navbar.responsive {position: relative;}
     .navbar.responsive a.icon {
-      position: absolute;
+      
       right: 0;
-      top: 0;}
+      top: 0;
+    }
 
     .navbar.responsive a {
       float: none;
@@ -78,3 +80,15 @@ body {
       text-align: center;
     }
   }
+
+.section1 {
+  color: #ccccff;
+}
+
+.section2 {
+  color: #ccccff;
+}
+
+.section3 {
+  color: #ccccff;
+}

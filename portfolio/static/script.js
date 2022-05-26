@@ -1,15 +1,28 @@
-var navIcon = document.getElementById("icon");
-var x = document.getElementById("navbar-container");
+var introName = document.getElementById("intro-name");
+var navbarContainer = document.getElementById("navbar-container");
+
+var MediaQueryTest = window.matchMedia("(max-width: 500px)") // Media size that removes last name from header
 
 function openNavbar() {
     
-    if (x.className === "navbar") {
-      x.className += " responsive";
-      navIcon.style.visibility = "hidden";
+    if (navbarContainer.className === "navbar") {
+      navbarContainer.className += " responsive";
+      
     } else {
-      x.className = "navbar";
-      navIcon.style.visibility = "visible"
+      navbarContainer.className = "navbar";
+      
     }
   } 
 
- // build event listener to control hidden icon
+  // Changes header depending on media query
+  function headerMediaQuery(x) {
+    if (x.matches) { // If media query matches
+      introName.textContent = "Robert H";
+    } else {
+      introName.textContent = "Robert Hassenmayer";
+    }
+  }
+  
+  
+  headerMediaQuery(MediaQueryTest) // Call listener function at run time
+  MediaQueryTest.addListener(headerMediaQuery) // Attach listener function on state changes 

@@ -4,7 +4,8 @@ body {
     background-color: #2e422e;
     /* use system fonts */
     font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto", 
-   "Oxygen","Ubuntu","Helvetica Neue", Arial, sans-serif;
+    "Oxygen","Ubuntu","Helvetica Neue", Arial, sans-serif;
+    color: #ccccff;
 }
 /*  body #2e422e 
     header-title bg #253625 
@@ -82,13 +83,27 @@ body {
   }
 
 .section1 {
-  color: #ccccff;
+  max-width: 50rem;
+  margin-bottom: 3rem;
 }
 
-.section2 {
-  color: #ccccff;
+.section1 h2 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
 }
 
-.section3 {
-  color: #ccccff;
+.section1 p {
+  opacity: 0.8;
+  line-height: 1.5rem;
+}
+
+.project-grid {
+display: flex;
+gap: 2rem;
+margin: 2rem auto;
+justify-content: space-around;
+min-width: 100;
+}
+.project-grid div {
+background-color: red;
 }
